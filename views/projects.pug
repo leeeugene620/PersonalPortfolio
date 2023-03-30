@@ -1,0 +1,17 @@
+extends default 
+
+block header 
+
+block content 
+    div.profile 
+        div.profile-image(style=`background: url('/images/${project.imgSrc}') top center
+        no-repeat; background-size: cover;`)
+        div.profile-details
+            h1.project-projectName 
+                | #{project.projectName}
+            h2.profile-tagline 
+                | #{project.timeline} 
+            p.profile-bio 
+                | #{project.description}
+            a.button.button-twitter(href=`${project.twitter}`)
+                | Follow me on twitter

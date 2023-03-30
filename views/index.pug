@@ -1,0 +1,35 @@
+extends default 
+//-To nest elements indent them
+block content 
+    section.hpcontainer
+        div.body
+            each project in projects
+                div.portfolio
+                    a(href=`/projects?id=${project.id}`)
+                        div.project-image(style=`background: url('/images/${project.imgSrc}') top center
+                    no-repeat; background-size: cover; href='/projects?id=${project.id}'`)
+                    h2.project-name 
+                        | #{project.projectName}
+        div.sidebar
+            p#intro  Hello my name is Eugene Lee! Currently a Computer Science major pursuing a Bachelor's Degree. I am highly adaptable and have good communication skills, especially being able to emphasize with others. Strong problem solving skills and ability to think outside the box. Looking to gain experience, improve my skills, and gain new skills while working with the company.
+            
+            button.btn.btn-blue Click me 
+            p Has the Pug been Found? #{name}
+            
+        
+   
+
+
+
+
+
+
+
+
+
+//-<div class="container">
+//- <p id="hello">Hello Pug!</p>
+//- <button class="btn btn-blue"> Click Me </button>
+//- </div>
+//- img(src="fish.png" alt="A big fish")
+//- <img src="fish.png" alt="A big fish">

@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    main
+      block header
+        header.header#grad
+          h1.icon
+            img(src='/images/catmouthtape.jpg', height="87px", width="80px", alt="My cat stock pfp")
+          h1 #{title}
+          div.nav
+            a.navlink(href="/") Homepage
+            a.navlink(href="/projectlist") My Projects
+            a.navlink(href="/goals") My Goals
+            a.navlink(href="/contact") Contact info
+            a.navlink(href="/moreinfo") More info
+      block content
